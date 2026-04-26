@@ -3,10 +3,8 @@ body {
     color: azure;
 
     display: flex;
-    flex-direction: column;   /* 👈 ESSENCIAL */
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh; /* 👈 ESSENCIAL */
     margin: 0;
 }
 div{
@@ -17,8 +15,9 @@ div{
      
     
 }
-footer{
+footer {
     text-align: center;
+    padding: 10px;
 }
 h1{
     text-align: center;
@@ -33,10 +32,7 @@ h1{
 
 }
 main {
-    background: rgb(55, 55, 55);
-    border-radius: 15px;
-    padding: 20px;
-
-    max-width: 400px;  /* impede de esticar */
-    width: 100%;       /* ocupa espaço em telas pequenas */
+    margin: auto;        /* centraliza */
+    max-width: 400px;
+    width: 100%;
 }
