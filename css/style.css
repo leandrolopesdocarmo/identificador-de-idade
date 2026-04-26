@@ -1,6 +1,13 @@
-body{
+body {
     background: rgb(31, 30, 30);
     color: azure;
+
+    display: flex;
+    flex-direction: column;   /* 👈 ESSENCIAL */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 div{
     
@@ -24,4 +31,12 @@ h1{
     display: block;
     margin: 20px auto;
 
+}
+main {
+    background: rgb(55, 55, 55);
+    border-radius: 15px;
+    padding: 20px;
+
+    max-width: 400px;  /* impede de esticar */
+    width: 100%;       /* ocupa espaço em telas pequenas */
 }
