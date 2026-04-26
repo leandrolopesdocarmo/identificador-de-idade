@@ -1,0 +1,27 @@
+body{
+    background: rgb(31, 30, 30);
+    color: azure;
+}
+div{
+    
+    background: rgb(55, 55, 55);
+    border-radius: 15px;
+     padding: 20px; 
+     
+    
+}
+footer{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+#res{
+    text-align: center;
+    
+}
+#foto {
+    display: block;
+    margin: 20px auto;
+
+}
