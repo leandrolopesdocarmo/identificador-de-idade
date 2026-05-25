@@ -4,9 +4,14 @@ function verificar(){
     var ano = data.getFullYear();
     var fano = document.getElementById('txtano');
     var res = document.querySelector('div#res');
-    if (fano.value.length == 0 ||fano.value > ano){
-        alert('Verifique os dados e tente novamente');
-    }else{
+    if (
+    fano.value.length == 0 ||
+    fano.value > ano ||
+    fano.value < 1900 ||
+    fano.value.length < 4
+) {
+    alert('Digite um ano válido com 4 números');
+}else{
         var fsex = document.getElementsByName('radsex');
         var idade = ano - Number(fano.value);
         var genero ='';
@@ -49,4 +54,13 @@ function verificar(){
        res.appendChild(img)
     }
 }
-        
+document.addEventListener('DOMContentLoaded', function () {
+    const inputAno = document.getElementById('txtano');
+
+    inputAno.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            verificar();
+        }
+    });
+});
